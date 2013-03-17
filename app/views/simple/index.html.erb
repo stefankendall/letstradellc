@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="hero-unit">
+    <h1>Let's Trade LLC</h1>
+
+    <p>Are you looking to make some extra cash? Do you live near a major US city? Let's talk.</p>
+
+    <p><%= form_tag(:controller => "users", :action => "create", :class => 'form-inline') %>
+
+    <div class="span5" style="margin-left:0">
+      <input style="width:100%" name="email" type="text" placeholder="john@example.com"/>
+    </div>
+    <div class="span5">
+      <input class="btn btn-success" type="submit" value="Start Trading"/>
+    </div>
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="span4">
+      <h2>Trade</h2>
+
+      <p>We negotiate deals on craigslist, and hand off to you. You meet a seller at a time and place that works for you
+        and make
+        the trade.</p>
+
+      <p>You send us pictures of the item, and we list on eBay. Because we do bulk volume, we get discounts on fees.</p>
+    </div>
+    <div class="span4">
+      <h2>Ship</h2>
+
+      <p>You print out a label we email you, and drop your package in a blue USPS box anywhere.</p>
+
+    </div>
+    <div class="span4">
+      <h2>Get paid</h2>
+
+      <p>Once the package is shipped, we pay you the cost of the original item and 50% of the profit.</p>
+
+      <p>You can expect to make $20-$60 a trade.</p>
+
+      <p>We'll <strong>never</strong> pay you less than $20.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span4">
+      <h2>Protection</h2>
+
+      <p>We deal with PayPal fraud and manage the returns process for you. You get paid and keep trading, even if the
+        eBay
+        buyer becomes a pain in the ass.</p>
+    </div>
+
+    <div class="span4">
+      <h2>Earn</h2>
+
+      <p>The best month for a buyer so far is $1000 profit. Average profit is around ~$500/month,
+        but this will vary based on your market.</p>
+    </div>
+
+    <div class="span4">
+      <h2>Cities</h2>
+
+      <p>We currently cover these cities:</p>
+
+      <ul>
+        <li>Raleigh, NC</li>
+        <li>Lexington, KY</li>
+        <li>Cincinnati, OH</li>
+        <li>Louisville, KY</li>
+        <li>Nashville, TN</li>
+      </ul>
+    </div>
+  </div>
+</div>
