@@ -4,15 +4,14 @@
 
     <p>Are you looking to make some extra cash? Do you live near a major US city? Let's talk.</p>
 
-    <p><%= form_tag(:controller => "users", :action => "create", :class => 'form-inline') %>
-
-    <div class="span5" style="margin-left:0">
-      <input style="width:100%" name="email" type="text" placeholder="john@example.com"/>
-    </div>
-    <div class="span5">
-      <input class="btn btn-success" type="submit" value="Start Trading"/>
-    </div>
-    </form>
+    <%= form_tag({:controller => "users", :action => "create", :class => 'form-inline'}, {:remote => true}) do %>
+        <div class="span5" style="margin-left:0">
+          <input style="width:100%" name="email" type="text" placeholder="john@example.com"/>
+        </div>
+        <div class="span5">
+          <input class="btn btn-success" type="submit" value="Start Trading"/>
+        </div>
+    <% end %>
   </div>
 
   <div class="row">
