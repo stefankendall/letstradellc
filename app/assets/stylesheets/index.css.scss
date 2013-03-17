@@ -1,0 +1,24 @@
+.container {
+  margin-top: 1em;
+}
+
+.hero-unit {
+  form {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-unit {
+    padding: 0.5em;
+    margin-bottom: 0;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .start-button {
+      margin-top: 0.5em;
+    }
+  }
+}

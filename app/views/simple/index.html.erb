@@ -6,14 +6,17 @@
 
     <div id="success-message" class="alert alert-success hide">
       <strong>Thanks for the interest!</strong>
+
       <p>One of our members will contact you soon for the next steps to start making money.</p>
     </div>
     <%= form_tag({:controller => "users", :action => "create"}, {:remote => true, :class => 'form-inline', :id => 'signup-form'}) do %>
-        <div class="span5" style="margin-left:0">
-          <input style="width:100%" name="email" type="email" placeholder="john@example.com"/>
-        </div>
-        <div class="span5">
-          <input class="btn btn-success" type="submit" value="Start Trading"/>
+        <div class="row">
+          <div class="span5">
+            <input style="width:90%" name="email" type="email" placeholder="john@example.com"/>
+          </div>
+          <div class="span5 start-button">
+            <input class="btn btn-success" type="submit" value="Start Trading"/>
+          </div>
         </div>
     <% end %>
   </div>
@@ -22,14 +25,16 @@
     <div class="span4">
       <h2>Trade</h2>
 
-      <p>We negotiate deals on craigslist and hand off to you. You setup and make a trade at a time and place that works for you.</p>
+      <p>We negotiate deals on craigslist and hand off to you. You setup and make a trade at a time and place that works
+        for you.</p>
 
       <p>You send us pictures of the item, and we list on eBay.</p>
     </div>
     <div class="span4">
       <h2>Ship</h2>
 
-      <p>Once your listing sells, we email you a USPS shipping label, and you drop your package in a blue USPS box anywhere.</p>
+      <p>Once your listing sells, we email you a USPS shipping label, and you drop your package in a blue USPS box
+        anywhere.</p>
 
     </div>
     <div class="span4">
