@@ -4,9 +4,13 @@
 
     <p>Are you looking to make some extra cash? Do you live near a major US city? Let's talk.</p>
 
-    <%= form_tag({:controller => "users", :action => "create", :class => 'form-inline'}, {:remote => true}) do %>
+    <div id="success-message" class="alert alert-success hide">
+      <strong>Thanks for the interest!</strong>
+      <p>One of our members will contact you soon for the next steps to start making money.</p>
+    </div>
+    <%= form_tag({:controller => "users", :action => "create"}, {:remote => true, :class => 'form-inline', :id => 'signup-form'}) do %>
         <div class="span5" style="margin-left:0">
-          <input style="width:100%" name="email" type="text" placeholder="john@example.com"/>
+          <input style="width:100%" name="email" type="email" placeholder="john@example.com"/>
         </div>
         <div class="span5">
           <input class="btn btn-success" type="submit" value="Start Trading"/>
@@ -18,26 +22,20 @@
     <div class="span4">
       <h2>Trade</h2>
 
-      <p>We negotiate deals on craigslist, and hand off to you. You meet a seller at a time and place that works for you
-        and make
-        the trade.</p>
+      <p>We negotiate deals on craigslist and hand off to you. You setup and make a trade at a time and place that works for you.</p>
 
-      <p>You send us pictures of the item, and we list on eBay. Because we do bulk volume, we get discounts on fees.</p>
+      <p>You send us pictures of the item, and we list on eBay.</p>
     </div>
     <div class="span4">
       <h2>Ship</h2>
 
-      <p>You print out a label we email you, and drop your package in a blue USPS box anywhere.</p>
+      <p>Once your listing sells, we email you a USPS shipping label, and you drop your package in a blue USPS box anywhere.</p>
 
     </div>
     <div class="span4">
       <h2>Get paid</h2>
 
       <p>Once the package is shipped, we pay you the cost of the original item and 50% of the profit.</p>
-
-      <p>You can expect to make $20-$60 a trade.</p>
-
-      <p>We'll <strong>never</strong> pay you less than $20.</p>
     </div>
   </div>
 
@@ -53,14 +51,18 @@
     <div class="span4">
       <h2>Earn</h2>
 
+      <p>You can expect to make $20-$60 a trade.</p>
+
+      <p>We'll <strong>never</strong> pay you less than $20.</p>
+
       <p>The best month for a buyer so far is $1000 profit. Average profit is around ~$500/month,
-        but this will vary based on your market.</p>
+        but this will vary based on your city.</p>
     </div>
 
     <div class="span4">
       <h2>Cities</h2>
 
-      <p>We currently cover these cities:</p>
+      <p>We're currently operating in these cities:</p>
 
       <ul>
         <li>Raleigh, NC</li>
