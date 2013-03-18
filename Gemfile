@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-gem 'rails_admin'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+gem 'less-rails-bootstrap'
+gem 'therubyracer'
 
 group :production do
   gem 'pg'
@@ -44,6 +46,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
-
-gem "devise"
