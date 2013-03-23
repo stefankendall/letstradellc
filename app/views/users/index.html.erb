@@ -1,0 +1,6 @@
+<ul>
+  <% @users.each do |user| %>
+      <li><%= link_to "done", {:action => 'destroy', :id => user.id}, :method => :delete, :class => 'btn btn-danger' %> <%= user.email %></li>
+  <% end %>
+</ul>
+
